@@ -4,6 +4,13 @@ public class BasketBaller {
 	private int[] rebounds;
 	private int[] assists;
 
+	public BasketBaller(String name, int[] points, int[] rebounds, int[] assists) {
+		this.name = name;
+		this.points = points;
+		this.rebounds = rebounds;
+		this.assists = assists;
+	}
+
 	public int countDoubleDoubles(){
 		int countDouDoubles = 0;
 		int point = 0;
@@ -36,4 +43,9 @@ public class BasketBaller {
 	public int[] getRebounds() {
 		return rebounds;
 	}
+		public String toString(){
+		return "Name: " +name;
+	}
+}
+
 }
